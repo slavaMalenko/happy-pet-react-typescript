@@ -1,0 +1,75 @@
+@import '../../variables';
+
+.about {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    &__img {
+        width: 50%;
+    }
+
+    &__info {
+        border: 1px transparent solid;
+        transition: all .2s linear;
+        padding: 0 30px;
+        
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            border: 1px $black solid;
+        }
+
+        &-title {
+            text-align: center;
+            padding: 40px 0 15px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        &-description {
+            font-size: 16px;
+            line-height: 18px;
+            padding: 0 10px 20px;
+            margin: auto 0 15px 0;
+        }
+    }
+}
+
+.advantages {
+    padding: 30px 5px;
+    border: 1px transparent solid;
+    transition: all .2s linear;
+
+    &:hover {
+        border: 1px $black solid;
+    }
+
+    &__title {
+        text-align: center;
+        padding: 20px 0 15px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    &__items {
+        padding: 0 40px;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+        list-style-type: decimal;
+
+        &-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.additionally {
+    margin-top: 50px;
+    font-size: 12px;
+}

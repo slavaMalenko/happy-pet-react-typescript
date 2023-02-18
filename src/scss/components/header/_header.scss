@@ -1,0 +1,72 @@
+@import '../../variables';
+
+
+
+.header {
+    width: 100%;
+    padding-top: 7vh;
+    height: 17vh;
+    
+    &__content {
+        display: flex;
+        padding: 0 20px;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+
+    text-decoration: none;
+    outline: $outlineLink;
+
+    &__img {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 65%;
+            left: -87%;
+            width: 150px;
+            height: 155px;
+            background: url(../../../assets/img/header/parrot.png) no-repeat left 7px;
+            background-size: 100%;
+            z-index: 50;
+        }
+
+        &-photo {
+            width: 50px;
+            height: 61.5px;
+            margin-right: 15px;
+        }
+    }
+
+    &__text {
+        font-weight: 800;
+        font-size: 20px;
+        color: $black;
+    }
+}
+
+.tel {
+    display: flex;
+    align-items: center;
+    margin-right: 110px;
+
+    text-decoration: none;
+    outline: $outlineLink;
+    border: 0;
+    background-color: transparent;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+
+    &__img {
+        margin-right: 8px;
+    }
+
+    &__cont {
+        color: $black;
+    }
+}

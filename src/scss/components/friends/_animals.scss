@@ -1,0 +1,126 @@
+@import '../../variables';
+
+.friends {
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+
+.animals {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.animal {
+    width: 25%;
+    padding: 0 10px;
+    margin-bottom: 30px;
+
+    &-bcg {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background: linear-gradient(180deg, $white 0%, $white 100%);
+        border-radius: 30px;
+    }
+
+    &:hover {
+        filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+    }
+
+    &:hover &__info-description {
+        background-color: rgb(255, 255, 255);
+        transform: scale(1.05);
+    }
+
+    &__img {
+        transition: all .1s linear;
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    &__info {
+        text-align: center;
+
+        &-name {
+            font-size: 28px;
+            line-height: 34px;
+            letter-spacing: -0.055em;
+        }
+
+        &-description {
+            background: $white;
+            transition: all .2s linear;
+            line-height: 15px;
+            font-size: 13px;
+            padding: 10px 15px;
+        }
+    }
+
+    &__bottom {
+        width: 100%;
+        margin: auto 0 0 0;
+
+        &-desc {
+            font-size: 13px;
+            padding: 5px 15px;
+        }
+
+        &-value {
+            font-weight: 500;
+        }
+
+        &-kind {
+            color: #fe5f1e;
+            border-bottom: 1px dashed #fe5f1e;
+            cursor: pointer;
+        }
+    }
+
+    &__price {
+        margin-top: 10px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        background: #E8E8E8;
+        // box-shadow: inset 0px -2px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 100px;  
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 40%;
+            right: 5%;
+            width: 35px;
+            height: 38px;
+            transform: translate(0, -50%);
+            background: url(../../../assets/img/friends/lapka.png) no-repeat left 7px;
+            background-size: 100%;
+        }
+
+        &-button {
+            padding: 8px 18px;
+            background-color: #FE2E2E;
+            border-radius: 105px;
+            border: 0;
+            transition: all .1s linear;
+
+            font-family: Montserrat, sans-serif;
+            line-height: 18px;
+            font-size: 14px;
+            color: $white;
+
+            &:hover {
+                background-color: #ff5050
+            }
+        }
+
+        &-value {
+            padding: 5px 0 8px;
+        }
+    }
+}
