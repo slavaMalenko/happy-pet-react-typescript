@@ -2,8 +2,8 @@ import React from 'react';
 import { IAnimal } from '../types';
 
 interface IAnimals {
-    items: IAnimal[] | null,
-    changeCartPriceAndAnimalName: (price: number, name: string | null) => void
+    changeCartPriceAndAnimalName: (price: number, name: string | null) => void,
+    items: IAnimal[] | null
 }
 
 const Animals: React.FC<IAnimals> = ({ items, changeCartPriceAndAnimalName }) =>
