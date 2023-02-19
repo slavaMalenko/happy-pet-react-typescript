@@ -1,7 +1,7 @@
 import React from "react"
 import ContentLoader from "react-content-loader";
 
-const AnimalLoader: React.FC = (props) => (
+const AnimalLoader: React.FC = props =>
     <ContentLoader
         speed={2}
         width={280}
@@ -16,6 +16,5 @@ const AnimalLoader: React.FC = (props) => (
         <rect x="63" y="290" rx="17" ry="17" width="156" height="18" />
         <rect x="7" y="314" rx="40" ry="40" width="270" height="68" />
     </ContentLoader>
-)
 
 export default AnimalLoader;

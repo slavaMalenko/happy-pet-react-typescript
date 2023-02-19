@@ -1,11 +1,5 @@
 import React from 'react';
 
-const Contacts: React.FC = () => {
-    return (
-        <div>
-
-        </div>
-    )
-}
+const Contacts: React.FC = () => <div></div>;
 
 export default Contacts;

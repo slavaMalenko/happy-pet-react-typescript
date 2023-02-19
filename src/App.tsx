@@ -8,7 +8,7 @@ import Friends from './components/pages/Friends';
 function App() {
   return (
     <>
-      <Header/>
+      <Header />
 
       <main className="main">
         <div className="container">
@@ -21,7 +21,7 @@ function App() {
         </div>
       </main>
     </>
-  );
+  )
 }
 
 export default App;
