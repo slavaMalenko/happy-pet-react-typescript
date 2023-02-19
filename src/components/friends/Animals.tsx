@@ -2,10 +2,9 @@ import React from 'react';
 import { IAnimal } from '../types';
 
 interface IAnimals {
-    changeCartPriceAndAnimalName: (price: number, name: string | null) => void,
-    items: IAnimal[] | null
+    items: IAnimal[] | null,
+    changeCartPriceAndAnimalName: (price: number, name: string | null) => void
 }
-
 const Animals: React.FC<IAnimals> = ({ items, changeCartPriceAndAnimalName }) =>
     <div className="animals">
         {items && items.map(({ imageUrl, name, description, kind, ageValue, age, price }, index) => (
