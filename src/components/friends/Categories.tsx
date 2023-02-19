@@ -4,11 +4,11 @@ import { ICategoriesAnimals } from '../pages/Friends';
 
 interface ICategories {
     items: ICategoriesAnimals[],
-    activeItemCategories: string | null,
-    onClickItem: (category: string | null) => void
+    onClickItem: (category: string | null) => void,
+    activeItemCategories: string | null
 }
 
-const Categories: React.FC<ICategories> = React.memo(({ items, activeItemCategories, onClickItem }) => 
+const Categories: React.FC<ICategories> = React.memo(({ items, activeItemCategories, onClickItem }) =>
     <ul className="categories__items">
         <li className="categories__item">
             <p
@@ -22,7 +22,7 @@ const Categories: React.FC<ICategories> = React.memo(({ items, activeItemCategor
             </p>
         </li>
 
-        {items.map((item, index) => 
+        {items.map((item, index) =>
             <li key={`${item}_${index}`} className="categories__item">
                 <p
                     className={classNames(

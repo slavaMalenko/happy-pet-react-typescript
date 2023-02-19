@@ -8,9 +8,9 @@ type MenuItems = {
 }
 
 interface IMenu {
+    changeActiveItem: (item: string) => void,
     items: MenuItems[],
     activeItem: string,
-    changeActiveItem: (item: string) => void
 }
 
 const Menu: React.FC<IMenu> = ({ items, activeItem, changeActiveItem }) => <div className="menu">
