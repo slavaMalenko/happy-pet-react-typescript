@@ -27,7 +27,7 @@ const BasketButton: React.FC = () => {
         phoneNumber
     })
     )
-    // TODO Тренировка GIT-LIFE
+    // TODO Тренировка GIT
     const dispatch = useAppDicpatch();
 
     const clearAllCart = () => {
