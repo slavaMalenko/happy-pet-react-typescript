@@ -8,7 +8,7 @@ import tel from '../../assets/img/header/tel.png';
 import { setMenuActive, setMenuActiveHome } from '../../redux/redusers/menu';
 import { useAppDicpatch, useAppSelector } from '../../redux/store';
 import BasketButton from './BasketButton';
-// TODO исправить импорт
+// TODO Исправить
 
 const menuItems = [
     { name: 'Главная', link: '/' },
