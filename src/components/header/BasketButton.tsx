@@ -27,7 +27,7 @@ const BasketButton: React.FC = () => {
         phoneNumber
     })
     )
-    // TODO Тренировка git
+    // TODO Убрать лишний пробел
     const dispatch = useAppDicpatch();
 
     const clearAllCart = () => {
