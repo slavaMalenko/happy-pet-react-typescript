@@ -9,6 +9,7 @@ import { setMenuActive, setMenuActiveHome } from '../../redux/redusers/menu';
 import { useAppDicpatch, useAppSelector } from '../../redux/store';
 import BasketButton from './BasketButton';
 // TODO Исправить
+// TODO Подправить
 
 const menuItems = [
     { name: 'Главная', link: '/' },
