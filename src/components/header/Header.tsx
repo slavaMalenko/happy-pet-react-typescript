@@ -8,6 +8,7 @@ import tel from '../../assets/img/header/tel.png';
 import { setMenuActive, setMenuActiveHome } from '../../redux/redusers/menu';
 import { useAppDicpatch, useAppSelector } from '../../redux/store';
 import BasketButton from './BasketButton';
+// TODO исправить импорты
 
 const menuItems = [
     { name: 'Главная', link: '/' },
@@ -18,7 +19,7 @@ const menuItems = [
 
 const Header: React.FC = () => {
     const dispatch = useAppDicpatch();
-    const {menuActiveItem} = useAppSelector(({ menu }) => ({menuActiveItem: menu.activeItem}));
+    const { menuActiveItem } = useAppSelector(({ menu }) => ({ menuActiveItem: menu.activeItem }));
 
     React.useEffect(() => {
         dispatch(setMenuActive(window.location.pathname));
