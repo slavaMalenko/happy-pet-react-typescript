@@ -19,14 +19,15 @@ const BasketButton: React.FC = () => {
         animalName,
         orderCode,
         phoneNumber
-    } = useAppSelector(({ cart: { totalPrice, animalName, orderCode, phoneNumber} }) => 
-        ({
-            totalPrice,
-            animalName,
-            orderCode,
-            phoneNumber
-        })
+    } = useAppSelector(({ cart: { totalPrice, animalName, orderCode, phoneNumber } }) =>
+    ({
+        totalPrice,
+        animalName,
+        orderCode,
+        phoneNumber
+    })
     )
+    // TODO Убрать лишний пробел
     const dispatch = useAppDicpatch();
 
     const clearAllCart = () => {
